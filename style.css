@@ -487,6 +487,12 @@ body:hover .cursor-outline {
 
 .info-value {
     font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+.about-text,
+.education-timeline {
+    min-width: 0;
 }
 
 .education-timeline {
@@ -679,6 +685,139 @@ body:hover .cursor-outline {
 .color-5 {
     background: linear-gradient(45deg, #232526, #414345);
     color: #f1c40f;
+}
+
+.color-6 {
+    background: linear-gradient(45deg, #1e1b4b, #312e81);
+    color: #a78bfa;
+}
+
+.color-7 {
+    background: linear-gradient(45deg, #0b1026, #2b2d5c);
+    color: #fcd34d;
+}
+
+.color-8 {
+    background: linear-gradient(45deg, #0c4a6e, #155e75);
+    color: #7dd3fc;
+}
+
+.color-9 {
+    background: linear-gradient(45deg, #3b0a1e, #5b1a33);
+    color: #fb7185;
+}
+
+.project-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-main);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.3rem 0.8rem;
+    border-radius: 50px;
+}
+
+.other-projects-title {
+    margin-top: 4rem;
+}
+
+/* Availability badge */
+.availability-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    background: rgba(124, 58, 237, 0.1);
+    border: 1px solid rgba(124, 58, 237, 0.35);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+}
+
+.availability-dot {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.2);
+}
+
+/* Experience Section */
+.experience-list {
+    display: grid;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-left: 3px solid var(--accent-primary);
+    border-radius: 12px;
+    padding: 2rem;
+    transition: var(--transition-base);
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-sm);
+}
+
+.experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+}
+
+.experience-role {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.experience-company {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.experience-date {
+    font-size: 0.85rem;
+    color: var(--accent-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.experience-points {
+    list-style: none;
+    margin: 0 0 1.5rem;
+    padding: 0;
+}
+
+.experience-points li {
+    position: relative;
+    padding-left: 1.4rem;
+    margin-bottom: 0.6rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.experience-points li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.65em;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent-primary);
 }
 
 .project-overlay {
@@ -1034,5 +1173,13 @@ body:hover .cursor-outline {
 
     .hero-title {
         font-size: 2.5rem;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        padding: 1.5rem;
     }
 }

@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // --- Typing Effect ---
     const typingText = document.querySelector('.typing-text');
-    const words = ["Science des Données", "Machine Learning", "Développement Web", "Intelligence Artificielle"];
+    const words = ["Science des Données", "Machine Learning", "LLM & RAG", "Intelligence Artificielle"];
     let wordIndex = 0;
     let charIndex = 0;
     let isDeleting = false;
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     // --- Reveal on Scroll ---
-    const revealElements = document.querySelectorAll('.project-card, .skill-category, .about-content, .contact-wrapper');
+    const revealElements = document.querySelectorAll('.project-card, .skill-category, .about-content, .experience-card, .contact-wrapper');
     
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
